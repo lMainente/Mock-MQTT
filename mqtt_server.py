@@ -1,4 +1,7 @@
+# Rodar mosquitto -p 1883 na pasta de install /ou aguardar servidor configurado
+
 import paho.mqtt.client as mqtt
+
 
 def on_connect(client, userdata, flags, rc):
     print("Conectado. Código de resultado: " + str(rc))
