@@ -1,16 +1,9 @@
 # mqttlocation
 
-A new Flutter project.
 
-## Getting Started
+## Projeto De Teste Protocolo MQTT + Flutter(mobile) + Cassandra + PHP(Web)
 
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+1. Configurar um servidor MQTT: Você precisará configurar um servidor MQTT que será responsável por receber os dados de localização do celular neste caso foi usado mosquitto
+2. Desenvolver um aplicativo móvel: Desenvolva um aplicativo móvel para capturar a localização em tempo real do celular. Integre o aplicativo com a biblioteca MQTT para enviar os dados de localização para o servidor MQTT configurado.
+3. Configurar a aplicação PHP: Configure a aplicação PHP que receberá os dados de localização do servidor MQTT. Utilize a biblioteca MQTT no lado do servidor para se inscrever nos tópicos relevantes e processar as mensagens MQTT recebidas. Em seguida, armazene as informações de localização no Cassandra utilizando a biblioteca oficial para PHP (https://github.com/thobbs/phpcassa).
+4. Exibir dados em uma tela: Crie uma interface de usuário em PHP para exibir os dados de localização em tempo real. Utilize HTML, CSS e JavaScript para construir a página web. Você pode utilizar bibliotecas de visualização de mapas, como o Leaflet ou o Google Maps, para exibir as coordenadas de localização em um mapa interativo.
